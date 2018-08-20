@@ -19,24 +19,19 @@ namespace OnToXService
         {
             int StartNumber = 1;
             var Collection_Numbers = new List<int>();
-            
-
-           
-                if (input_number != 0 && input_number > StartNumber)
+            if (input_number != 0 && input_number > StartNumber)
+            {
+                for (int i = StartNumber; i < input_number + 1; i++)
                 {
-                    for (int i = StartNumber; i < input_number + 1; i++)
-                    {
-                        Collection_Numbers.Add(i);
-                    }
+                    Collection_Numbers.Add(i);
                 }
-                else
-                {
-                    return Collection_Numbers;
-                
-                }
+            }
+            else
+            {
+                return Collection_Numbers;
             
+            }
             
-
             return Collection_Numbers;
         }
     }
